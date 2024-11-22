@@ -16,7 +16,7 @@ function App() {
           <nav>
             <ul className="flex space-x-4">
               <li><a href="#about" className="hover:underline">Tietoa</a></li>
-              <li><a href="#activities" className="hover:underline">Luvat</a></li>
+              <li><a href="#license" className="hover:underline">Luvat</a></li>
               <li><a href="#rules" className="hover:underline">Säännöt</a></li>
               <li><a href="#contact" className="hover:underline">Yhteydenotto</a></li>
             </ul>
@@ -47,15 +47,42 @@ Kalastuslupa-alueilla on selkeät säännöt ja rajoitukset, jotta kalakannat s�
           </div>
         </section>
 
-        <section id="activities" className="py-16 bg-green-100">
+        <section id="license" className="py-16 bg-green-100">
+            <h2 className="text-3xl font-bold mb-8 text-center">Luvat</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                  <h3 className="text-xl font-bold mb-2"></h3>
+                  <div key="Outdoor" className="bg-white p-6 rounded-lg shadow-md">
+                  <Tent className="w-12 h-12 text-green-500 mb-4" />
+                  <h3 className="text-xl font-bold mb-2">Kalastusluvat</h3>
+                  <p>Hinnat</p>
+                  <ul>
+                    <li>13 €/vrk</li>
+                    <li>50 €/vko</li>
+                    <li>100 €/vuosi</li>
+                  </ul>
+<p>Myynti</p>
+<ul>
+<li>Neste Rautalampi</li>
+<li>Törmälän Loma- ja kurssikeskus</li>
+<li>Tilisiirtona FI28 5389 0740 0336 26</li>
+</ul>
+
+                </div>
+
+                </div>
+ 
+        </section>
+
+        <section id="rules" className="py-16 bg-green-100">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">Our Activities</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Säännöt</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {activities.map((activity) => (
                 <div key={activity.name} className="bg-white p-6 rounded-lg shadow-md">
                   <activity.icon className="w-12 h-12 text-green-500 mb-4" />
                   <h3 className="text-xl font-bold mb-2">{activity.name}</h3>
-                  <p>Experience the beauty of nature through our guided {activity.name.toLowerCase()} adventures.</p>
+                  <p>Säännöt.</p>
                 </div>
               ))}
             </div>
@@ -64,12 +91,12 @@ Kalastuslupa-alueilla on selkeät säännöt ja rajoitukset, jotta kalakannat s�
 
         <section id="contact" className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Yhteystiedot</h2>
             <div className="flex flex-col md:flex-row justify-between items-start">
               <div className="mb-8 md:mb-0">
-                <h3 className="text-xl font-bold mb-4">Get in Touch</h3>
-                <p className="flex items-center mb-2"><MapPin className="mr-2" /> 123 Adventure Lane, Outdoor City, OC 12345</p>
-                <p className="flex items-center mb-2"><Mail className="mr-2" /> info@outdooradventures.com</p>
+                <h3 className="text-xl font-bold mb-4"></h3>
+                <p className="flex items-center mb-2"><MapPin className="mr-2" /> Konnekoskentie 334, 77700 Rautalampi</p>
+                <p className="flex items-center mb-2"><Mail className="mr-2" /> konnekoski@gmail.com</p>
               </div>
               <form className="w-full md:w-1/2">
                 <input type="text" placeholder="Your Name" className="w-full mb-4 p-2 border rounded" />
@@ -84,7 +111,7 @@ Kalastuslupa-alueilla on selkeät säännöt ja rajoitukset, jotta kalakannat s�
 
       <footer className="bg-green-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2023 OutdoorAdventures. All rights reserved.</p>
+          <p>&copy; Lassilan ja Kosken osakaskunnat.</p>
         </div>
       </footer>
     </div>
