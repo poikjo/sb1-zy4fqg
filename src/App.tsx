@@ -12,32 +12,35 @@ function App() {
     <div className="min-h-screen bg-green-50">
       <header className="bg-green-600 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">OutdoorAdventures</h1>
+          <h1 className="text-2xl font-bold">Konnekoski</h1>
           <nav>
             <ul className="flex space-x-4">
-              <li><a href="#about" className="hover:underline">About</a></li>
-              <li><a href="#activities" className="hover:underline">Activities</a></li>
-              <li><a href="#contact" className="hover:underline">Contact</a></li>
+              <li><a href="#about" className="hover:underline">Tietoa</a></li>
+              <li><a href="#activities" className="hover:underline">Luvat</a></li>
+              <li><a href="#rules" className="hover:underline">Säännöt</a></li>
+              <li><a href="#contact" className="hover:underline">Yhteydenotto</a></li>
             </ul>
           </nav>
         </div>
       </header>
 
       <main>
-        <section id="hero" className="py-20 text-center" style={{backgroundImage: "url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <section id="hero" className="py-20 text-center" style={{backgroundImage: "url('https://images.unsplash.com/photo-1729945969465-fac582396317?q=80&w=1781&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-white mb-4">Discover the Great Outdoors</h2>
-            <p className="text-xl text-white mb-8">Experience nature's beauty with our guided outdoor activities</p>
-            <a href="#activities" className="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition duration-300">Explore Activities</a>
+            <h2 className="text-4xl font-bold text-white mb-4">Konnekoski</h2>
+            <p className="text-xl text-white mb-8"></p>
           </div>
         </section>
 
         <section id="about" className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">About Us</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Tietoa</h2>
             <p className="text-lg mb-4">
-              OutdoorAdventures is dedicated to helping people connect with nature and experience the thrill of outdoor activities. Our expert guides ensure safe and memorable adventures for all skill levels.
-            </p>
+            Konnekoski sijaitsee Etelä-Suomessa ja on yksi alueen tunnetuimmista ja kauneimmista kalastuspaikoista. Tämä idyllinen koskialue tarjoaa loistavat puitteet niin perinteiselle virveli- kuin perhokalastuksellekin. Konnekosken kirkasvetinen vesi houkuttelee erityisesti lohen, taimenen ja särjen kalastajia.
+
+Koskella on useita kalastuspaikkoja, joissa voit kokeilla onneasi ja nauttia luonnon rauhasta. Kalastusalueet ovat monipuolisia: osa koskista on virtauksiltaan rauhallisempia, toiset taas virtaavat nopeammin, tarjoten jännittäviä haasteita kokeneemmille kalastajille. Konnekoskella voit kokea kalastuksen parhaat puolet, oli sitten kyseessä keväiset nousulohikalastukset tai syksyn taimenen pyytämiset.
+
+Kalastuslupa-alueilla on selkeät säännöt ja rajoitukset, jotta kalakannat säilyvät elinvoimaisina. Alueelle on myös hyvät kulkuyhteydet, ja sen läheltä löytyy mukautettuja majoitusvaihtoehtoja, mikä tekee siitä täydellisen paikan kalastuslomalle. Konnekoski on siis täydellinen valinta kaikille kalastuksen ystäville, jotka arvostavat luonnon kauneutta ja monipuolista kalastuskokemusta!            </p>
             <p className="text-lg">
               Whether you're a seasoned outdoor enthusiast or a first-time adventurer, we have something for everyone. Join us and create lasting memories in the great outdoors!
             </p>
